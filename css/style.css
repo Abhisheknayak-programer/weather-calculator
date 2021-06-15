@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600&display=swap');@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600&family=Sansita+Swashed:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* /////////////////////////////////  NAVBAR STYLING   /////////////////////////////////////////////////// */
+
+.menubar{
+    background: #000;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.headName{
+    color: white;
+}
+
+.navbar .nav-link{
+    color: white;
+    /* transition: all 1s; */
+}
+
+.navbar .nav-link:hover{
+    color: #f16782;
+    font-weight: 800;
+}
+
+.navbar-toggler{
+    color: white;
+}
+
+/* ///////////////////////////////////////  Header UI main box header ////////////////////////////////////////// */
+
+.header_ui{
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+}
+
+/* //////////////////////////////////left side header design ////////////////////////////////////////////////////// */
+
+
+.header_left{
+     display: flex;
+     justify-content: center;
+     align-items: flex-start;
+     flex-direction: column;
+}
+
+.header_left h3{
+    font-family: 'Lobster', cursive;
+}
+
+
+.header_left h2{
+    font-family: 'Sansita Swashed', cursive;
+}
+
+.cheakbtn{
+    border-radius: 1rem;
+    outline: none !important;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    box-shadow: 0 0.4rem 0.2rem -6px rgba(0, 0, 0, 0.9);
+    color: white;
+    background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%,  rgba(85,88,218,1) 0%, rgba(95,209,249,1) 100.2% );
+}
+.cheakbtn:hover{
+    background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+    /* box-shadow: 0 0.4rem 1rem -6px rgb(4, 0, 255); */
+}
+
+.blue_color{
+    color: blue;
+}
+.blue_color2{
+    color: red;
+}
+
+/* ////////////////////////////////// Right side header design ////////////////////////////////////////////////////// */
+
+
+
+
+
+
+/* ////////////////////////////////// footer design ////////////////////////////////////////////////////// */
+
+footer{
+    background: black;
+    margin-top: auto;
+}
+.footer p{
+    text-align: center;
+    color: white;
+}
+
+/* /////////////////////////////// ABOUT CUSTOMISATION  /////////////////////////////////////////////////// */
+
+.img_sizer{
+    height: 59vh;
+    width: 50%;
+}
+.About_header_right{
+    display: grid;
+    place-content: center;
+}
+
+/* /////////////////////////////////////////// Weather Page ////////////////////////////////////////// */
+
+.above_design{
+    background: black;
+    color: #868686;
+    border-radius: 2rem;
+    height: 3rem;
+    padding: 0 0.5rem;
+}
+
+.above_design input{
+    background: black;
+    outline: none;
+    border: none;
+    color: white;
+    margin-top: 0.5rem;
+}
+
+.above_design #submitBtn{
+    color: white;
+    background: turquoise;
+    padding: 0.6rem 0.7rem;
+    border-radius: 2rem;
+    float: right;
+    margin-top: 0.15rem;
+}
+
+
+
+
+
+
+
+.combined{
+    display: grid;
+    place-items: center;
+}
+
+
+.upperlayer{
+    width: 50%;
+    background: #000;
+    margin-top: 5rem;
+    border-radius: 1rem 1rem 0 0;
+    padding: 1rem 1rem 0 1rem;
+    color: white;
+}
+.upperlayer  p{
+    font-family: 'Sansita Swashed', cursive;
+   display: inline-block;
+}
+.upperlayer p:nth-child(2){
+    float: right;
+}
+
+
+
+
+
+
+
+.middlelayer{
+    width: 50%;
+    background: #000;
+    color: #fff;
+    border-radius: 0 0 1rem 1rem;
+    cursor: pointer;
+}
+
+.middlelayer #city_name2{
+    text-align: center;
+    font-size: 2rem;
+    font-family: cursive;
+
+}
+
+.middlelayer .downlayer{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+#temp,#temp_status{
+    font-family: 'Lily Script One', cursive;
+    font-size: 4rem;
+}
+
+
+/* //////////////////////////////////// Error Page /////////////////////////////////////////////////////////////// */
+
+.error_content{
+    display: grid;
+    place-content: center;
+    margin-top: 1rem;
+}
+
+.all_holder{
+    display: grid;
+    place-content: center;
+    height: 70vh;
+}
+
+
+
+/* /////////////////////////////////////////// MEDIA QUERIES /////////////////////////////////////////// */
+@media only screen and (max-width:768px){
+    .header_left{
+        height: auto;
+        margin: 1rem 0rem;
+    }
+    .header_right{
+        height: auto;
+        margin: 1rem 0rem;
+    }
+    #temp,#temp_status{
+        font-size: 2rem;
+    }
+    .middlelayer #city_name2{
+        font-size: 1rem;
+    }
+}
